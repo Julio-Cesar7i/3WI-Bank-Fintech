@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../3WI BANK 2.1/IMAGEM/8704915e-5aee-4bdf-96d6-54b0e40b7321-removebg-preview.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../3WI BANK 2.1/CSS/estilo.css">
+    <title>Redefinir Senha - 3WI Bank</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sendButton = document.getElementById("send-button");
+            const dialogBox = document.getElementById("dialog-box");
+        
+            sendButton.addEventListener("click", function() {
+                // Mostra a caixa de diálogo quando o botão é clicado
+                dialogBox.style.display = "block";
+        
+                // Oculta a caixa de diálogo após 3 segundos
+                setTimeout(function() {
+                    dialogBox.style.display = "none";
+                }, 3000); // 3 segundos (3000 milissegundos)
+            });
+        });
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="reset-password-box">
+            <h2>Redefinir Senha</h2>
+            <form>
+                <input type="email" placeholder="E-mail cadastrado" required>
+                <button type="button" id="send-button">Enviar Instruções</button>
+            </form>
+            <div class="dialog-box" id="dialog-box">
+                <p>E-mail de redefinição de senha enviado com sucesso.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="left-content">
+                <p>Itaú Unibanco Holding S.A. CNPJ: 12345678901234</p>
+                <p>Endereço:Praça Alfredo Egydio de Souza Aranha, 100, Torre Olavo Setubal, 7º andar</p>
+                <p>Número de Conta: 0123-4567-8901-2345</p>
+                <p>SAC: 0800 123 4567</p>
+            </div>
+            <div class="right-content">
+                <a href="#" class="social-link"><img src="../3WI BANK 2.1/IMAGEM/instagram-1581266_1280-removebg-preview.png" alt="Instagram"></a>
+                <a href="#" class="social-link"><img src="../3WI BANK 2.1/IMAGEM/youtube-1837872_1280.png" alt="YouTube"></a>
+                <a href="#" class="social-link"><img src="../3WI BANK 2.1/IMAGEM/facebook-2429746_1280.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
